@@ -58,6 +58,30 @@
       margin: 2em auto;
     }
 
+    .gallery-section {
+      padding: 2em;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      margin-top: 2em;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
       text-align: center;
       padding: 1em;
@@ -104,6 +128,17 @@
     <p style="text-align:center;">Please fill out the form below to schedule your henna session. We'll get back to you via email!</p>
     <iframe src="https://form.jotform.com/252787095203057" frameborder="0" allowfullscreen>Loading…</iframe>
   </main>
+
+  <section class="gallery-section">
+    <h2>Our Work</h2>
+    <p>Here are some of our favorite henna designs:</p>
+    <div class="gallery">
+      <img src="images/henna1.jpg" alt="Henna Design 1">
+      <img src="images/henna2.jpg" alt="Henna Design 2">
+      <img src="images/henna3.jpg" alt="Henna Design 3">
+      <!-- Add more images as needed -->
+    </div>
+  </section>
 
   <footer>
     <a class="insta-link" href="http://instagram.com/henna.bysona/?igsh=OW91aHB4a3VmcWpt" target="_blank">
