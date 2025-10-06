@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Work – Henna by Anmol</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      padding: 2em;
+      color: #a0522d;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      margin-top: 2em;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #a0522d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Henna Work</h1>
+  <p style="text-align:center;">Here are some of our favorite designs. Follow us on Instagram for more!</p>
+
+  <div class="gallery">
+    <img src="images/henna1.jpg" alt="Henna Design 1">
+    <img src="images/henna2.jpg" alt="Henna Design 2">
+    <img src="images/henna3.jpg" alt="Henna Design 3">
+    <!-- Add more images as needed -->
+  </div>
+
+  <p style="text-align:center; margin-top:2em;">
+    <a href="index.html">← Back to Booking</a>
+  </p>
+</body>
+</html>
