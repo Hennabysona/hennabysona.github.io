@@ -6,49 +6,10 @@
   <title>Henna Booking by Anmol</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #fff8f0;
-      display: flex;
-    }
-
-    /* Sidebar styles */
-    .sidebar {
-      width: 250px;
-      background-color: #a0522d;
-      color: white;
-      padding: 2em 1em;
-      height: 100vh;
-      box-sizing: border-box;
-      position: fixed;
-    }
-
-    .sidebar h2 {
-      margin-top: 0;
-      font-size: 1.5em;
-    }
-
-    .sidebar nav {
-      margin-top: 2em;
-    }
-
-    .sidebar nav a {
-      display: block;
-      color: #ffd7b5;
-      text-decoration: none;
-      margin: 1em 0;
-      font-weight: bold;
-    }
-
-    .sidebar nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Main content styles */
-    .main {
-      margin-left: 250px;
-      padding: 2em;
-      flex-grow: 1;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
 
@@ -65,50 +26,67 @@
       border: none;
     }
 
+    nav {
+      background-color: #f4e1d2;
+      padding: 1em;
+    }
+
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #a0522d;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       margin-top: 2em;
+      padding: 1em;
+      background-color: #f4e1d2;
       color: #a0522d;
+    }
+
+    .insta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      text-decoration: none;
+      color: #a0522d;
+      font-weight: bold;
+    }
+
+    .insta-link img {
+      width: 24px;
+      height: 24px;
     }
   </style>
 </head>
 <body>
-  <div class="sidebar">
-    <h2>Henna by Anmol</h2>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
-      <a href="#social">Social Media</a>
-    </nav>
-  </div>
+  <header>
+    <h1>Book Your Henna Appointment</h1>
+    <p>Beautiful designs for every occasion</p>
+  </header>
 
-  <div class="main">
-    <header>
-      <h1>Book Your Henna Appointment</h1>
-      <p>Beautiful designs for every occasion</p>
-    </header>
+  <nav>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="social.html">Social Media</a>
+  </nav>
 
+  <main>
     <p>Please fill out the form below to schedule your henna session. We'll get back to you via email!</p>
     <iframe src="https://form.jotform.com/252787095203057" frameborder="0" allowfullscreen>Loading…</iframe>
+  </main>
 
-    <footer>
-      <section id="about">
-        <h3>About Us</h3>
-        <p>Henna by Anmol offers elegant and intricate designs for weddings, parties, and special occasions. Based in Calgary, we bring tradition and creativity together.</p>
-      </section>
-
-      <section id="contact">
-        <h3>Contact</h3>
-        <p>Email: anmolhenna@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-      </section>
-
-      <section id="social">
-        <h3>Social Media</h3>
-        <p><a href="http://instagram.com/henna.bysona/?igsh=OW91aHB4a3VmcWpt" target="_blank">Follow us on Instagram @henna.bysona</a></p>
-      </section>
-
-      <p>© 2025 Henna by Anmol</p>
-    </footer>
-  </div>
+  <footer>
+    <a class="insta-link" href="http://instagram.com/henna.bysona/?igsh=OW91aHB4a3VmcWpt" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" />
+      @henna.bysona
+    </a>
+    <p>© 2025 Henna by Anmol</p>
+  </footer>
 </body>
 </html>
